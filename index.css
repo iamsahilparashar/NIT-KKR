@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+body {
+    height: 84vw;
+    font-family: 'Baloo Tammudu 2', cursive;
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    z-index: -2;
+    background-image: linear-gradient(red, yellow, red, yellow, red)
+}
+
+body:after {
+    content: "";
+    position: fixed;
+    top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
+    background: hsla(328, 52%, 104%, 0.1);
+    pointer-events: none;
+}
+
+header {
+    display: flex;
+
+}
+
+#logo img {
+    width: 12vw;
+    height: 11vw;
+    margin-left: 0.31vw;
+}
+
+#name {
+    margin-top: 1vw;
+    margin-left: 2vw;
+    font-size: 3.4vw;
+    margin-right: 1vw;
+    font-family: 'Stint Ultra Condensed', cursive;
+    /* z-index: 1; */
+    text-shadow: 2px 2px 2px orangered, 2px 2px 2px red, 4px 4px 4px rgb(15, 13, 13), 6px 6px 6px red;
+
+}
+
+#mapimg {
+    width: 5vw;
+    height: 5vw;
+    margin-left: -6vw;
+    margin-top: 6vw;
+}
+
+.ulist li {
+    margin-left: 10%;
+}
+
+#upmarqee {
+    display: flex;
+    border: 1.2vw solid black;
+    width: 93vw;
+    height: 6vw;
+    margin-top: 0vw;
+    margin-left: 2vw;
+    border-radius: 10px;
+}
+
+#marquee1 {
+    margin-top: 1vw;
+    font-size: 3vw;
+    width: 50vw;
+    text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 4px 4px 4px white, 6px 6px 6px red;
+
+}
+
+#new_marquee {
+    margin-top: 1vw;
+    margin-left: 3vw;
+    font-size: 3vw;
+    width: 32vw;
+    position: absolute;
+    text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 4px 4px 4px orangered, 6px 6px 6px red;
+
+}
+
+#marquee {
+    margin-left: 2%;
+    margin-top: 1vw;
+    width: 40vw;
+    height: 30vw;
+    border: 10px double black;
+    /* overflow: hidden; */
+}
+
+#marquee2 {
+    height: 26vw;
+}
+
+#heading {
+    text-align: center;
+    height: 4vw;
+    font-size: 2.3vw;
+    /* background-color: black; */
+}
+
+.mlist {
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    margin-left: 3vw;
+}
+
+
+#collimg {
+    position: absolute;
+    margin-top: -31vw;
+    margin-left: 45vw;
+    width: 50vw;
+    height: 30vw;
+    /* border: 20px double red; */
+    /* box-shadow: 2px 2px 2px yellow,2px 2px 2px red,4px 4px 4px white,6px 6px 6px red; */
+    box-shadow: 1vw 1vw 1vw yellow, 1vw 1vw 1vw orangered, 2vw 2vw 2vw red, 2vw 2vw 2vw yellow;
+}
+
+.images {
+    width: 48vw;
+    height: 28vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+#navbutton {
+    width: 10vw;
+    height: 10vw;
+    margin-top: -2vw;
+    margin-left: -2vw;
+}
+
+#hiddennav {
+    display: none;
+    background-image: linear-gradient(yellow, red, yellow);
+    color: black;
+    font-size: 2vw;
+    width: 40vw;
+    height: 36vw;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    animation: sahil;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+    text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 4px 4px 4px white, 6px 6px 6px red;
+
+}
+
+@keyframes sahil {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 4vw;
+    }
+}
+
+#hiddennav li {
+    margin-top: 2vw;
+}
+
+.instituteul {
+    margin-left: 4vw;
+}
+
+#institute {
+    display: none;
+}
+
+#institute li {
+    margin-bottom: 20%;
+}
+
+#display {
+    display: none;
+    width: 52vw;
+    height: 35vw;
+    overflow: scroll;
+    border-top: 12px double orangered;
+    border-left: 12px double orangered;
+    border-bottom: 12px double black;
+    border-right: 12px double black;
+    margin-top: -36vw;
+    margin-left: 45vw;
+    background-image: linear-gradient(red, yellow, red);
+    animation: sahil1;
+    animation-duration: 1s;
+    animation-direction: forwards;
+    animation-iteration-count: 1;
+    font-size: 120%;
+}
+
+@keyframes sahil1 {
+    from {
+        margin-top: -100vw;
+        margin-left: 47vw;
+    }
+
+    to {
+        margin-left: 45vw;
+    }
+}
+
+#academicul {
+    display: none;
+    width: 18vw;
+    height: 21vw;
+    margin-left: 24vw;
+    margin-top: -22vw;
+    border: 2px solid black;
+    color: black;
+    font-size: 2vw;
+    overflow: scroll;
+    animation: sahil2;
+    animation-duration: 0.5s;
+    text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 4px 4px 4px white, 6px 6px 6px red;
+
+}
+
+@keyframes sahil2 {
+    from {
+        margin-top: -100vw;
+    }
+
+    to {
+        margin-top: -22vw
+    }
+}
+
+#academicul li {
+    margin-top: 6%;
+    padding-bottom: 3%;
+
+}
+
+#display li {
+    padding-bottom: 7%;
+}
+
+#acad {
+    display: none;
+}
+
+#depart {
+    display: none;
+}
+
+#placement {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
+#academicul img {
+    padding-left: 20%;
+    width: 60%;
+    height: 30%;
+}
+
+.mydisplay {
+    display: none;
+}
+
+.table {
+    margin-left: 10%;
+}
+
+table,
+td,
+th {
+
+    border: 2px solid black;
+}
+
+#para {
+    font-size: 3vw;
+    color: black;
+    text-align: center;
+    margin-top: 13vw;
+    justify-content: center;
+}
+
+.map {
+    width: 70vw;
+    height: 51vw;
+    border: 3vw double black;
+    margin-left: 13vw;
+    margin-top: 4vw;
+    position: absolute;
+    animation: sahil3;
+    animation-duration: 1s;
+    z-index: 1;
+}
+
+#map {
+    display: none;
+}
+
+.mapinner {
+    width: 68vw;
+    height: 49vw;
+    /* border: 28px double black; */
+    margin-left: 1vw;
+    margin-top: 1vw;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes sahil3 {
+    from {
+        margin-top: -100vw;
+    }
+
+    to {
+        margin-top: 5vw;
+    }
+}
+
+#crossimg {
+    position: absolute;
+    z-index: 1;
+    width: 7vw;
+    height: 7vw;
+    margin-top: -6vw;
+    margin-left: 69vw;
+}
+
+#besteacher {
+    border: 1vw solid black;
+    width: 67vw;
+    height: 34vw;
+    margin-left: 16vw;
+    margin-top: 6vw;
+    display: flex;
+}
+
+#best {
+    display: none;
+    position: relative;
+}
+
+#table table {
+    width: 29vw;
+    height: 23vw;
+    margin-left: 4vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+
+#btimg img {
+    margin-left: 2vw;
+    width: 20vw;
+    margin-top: 2vw;
+    height: 20vw;
+}
+
+#btimg h2 {
+    margin-left: 2vw;
+    text-align: center;
+}
+
+footer {
+    border-top: 1vw double black;
+    border-left: 1vw double black;
+    margin-top: 4vw;
+    background-image: linear-gradient(orangered, rgba(255, 255, 0, 0.76), orangered, rgba(255, 255, 0, 0.76), orangered);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    box-shadow: 1vw 1vw 1vw black, -0.5vw -0.5vw 0.5vw #ff6d18, -1vw -1vw black;
+    border-bottom-right-radius: 3vw;
+}
+
+#innerfooter {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 2px 2px 2px rgb(15, 13, 13), 6px 6px 6px red;
+}
+
+#footerimg img {
+    width: 4vw;
+    height: 4vw;
+}
+
+#footerheading {
+    font-size: 1.2vw;
+    text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 2px 2px 2px rgb(15, 13, 13), 6px 6px 6px red;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width:700px) {
+    body {
+        height: 210vw;
+    }
+
+    #name {
+        /* display: flex;
+    flex-wrap: wrap; */
+        margin-left: 0vw;
+        font-size: 3.5vw;
+        text-shadow: 2px 2px 2px orangered, 2px 2px 2px red, 4px 4px 4px rgb(15, 13, 13), 6px 6px 6px red;
+    }
+
+    #marquee {
+        margin-top: 6%;
+        width: 92vw;
+        height: 70vw;
+        border: 2vw double black;
+    }
+
+    #marquee2 {
+        height: 57vw;
+    }
+
+    .mlist {
+        margin-top: 4vw;
+        font-size: 3vw;
+        margin-left: 4vw;
+    }
+
+    #collimg {
+        position: absolute;
+        margin-top: 4vw;
+        width: 82vw;
+        height: 70vw;
+        margin-left: 7.1vw;
+        box-shadow: 1vw 1vw 1vw yellow, 1vw 1vw 1vw orangered, 2vw 2vw 2vw red, 2vw 2vw 2vw yellow;
+    }
+
+    #heading {
+        text-align: center;
+        height: 8vw;
+        /* background-color: black; */
+    }
+
+    .images {
+        width: 78vw;
+        height: 66vw;
+        margin-top: 2vw;
+        margin-left: 2vw;
+    }
+
+    #display {
+        display: none;
+        width: 87vw;
+        height: 55vw;
+        overflow: scroll;
+        border-top: 4vw double orangered;
+        border-left: 4vw double orangered;
+        border-bottom: 4vw double black;
+        border-right: 4vw double black;
+        margin-top: 11vw;
+        margin-left: 2.5vw;
+        background-image: linear-gradient(red, yellow, red);
+        animation: sahil1;
+        animation-duration: 1s;
+        animation-direction: forwards;
+        animation-iteration-count: 1;
+        font-size: 4vw;
+        z-index: -1;
+    }
+
+    @keyframes sahil1 {
+        from {
+            margin-top: -100vw;
+            margin-left: -2vw;
+        }
+
+        to {
+            margin-left: 1%;
+        }
+    }
+
+    #para {
+        font-size: 4vw;
+        color: black;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #hiddennav {
+        display: none;
+        background-image: linear-gradient(yellow, red, yellow);
+        color: black;
+        font-size: 5vw;
+        width: 91vw;
+        height: 77vw;
+        margin-left: 4vw;
+        margin-top: 2vw;
+        animation: sahil;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: forwards;
+        text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 4px 4px 4px white, 6px 6px 6px red;
+    }
+
+    @keyframes sahil {
+        from {
+            margin-left: 0px;
+        }
+
+        to {
+            margin-left: 4vw;
+        }
+    }
+
+    #academicul {
+        display: none;
+        width: 39vw;
+        height: 43vw;
+        margin-left: 51vw;
+        margin-top: -108vw;
+        border: 2px solid black;
+        color: black;
+        font-size: 4vw;
+        overflow: scroll;
+        animation: sahil2;
+        animation-duration: 0.5s;
+        text-shadow: 2px 2px 2px yellow, 2px 2px 2px red, 4px 4px 4px white, 6px 6px 6px red;
+    }
+
+    @keyframes sahil2 {
+        from {
+            margin-top: -200vw;
+        }
+
+        to {
+            margin-top: -108vw
+        }
+    }
+
+    .map {
+        width: 70vw;
+        height: 51vw;
+        border: 3vw double black;
+        margin-left: 13vw;
+        margin-top: 5vw;
+        /* position: absolute; */
+        animation: sahil3;
+        animation-duration: 1s;
+        z-index: 1;
+    }
+
+    #besteacher {
+        border: 1vw solid black;
+        width: 67vw;
+        height: 33vw;
+        margin-left: 16vw;
+        margin-top: 1vw;
+        display: flex;
+        font-size: 2vw;
+    }
+
+    footer {
+        border-top: 1vw double black;
+        border-left: 1vw double black;
+        margin-top: 80vw;
+        background-image: linear-gradient(orangered, rgba(255, 255, 0, 0.76), orangered, rgba(255, 255, 0, 0.76), orangered);
+        margin-left: 2vw;
+        margin-right: 2vw;
+        box-shadow: 1vw 1vw 1vw black, -0.5vw -0.5vw 0.5vw #ff6d18, -1vw -1vw black;
+        border-bottom-right-radius: 3vw;
+    }
+}
